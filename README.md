@@ -18,3 +18,26 @@ Configurable options
 Works with any number of cryptocurrencies
 
 For a complete step-by-step setup guide please see: https://www.cryptomaton.org/2021/04/17/how-to-code-a-binance-crypto-trading-bot-that-trades-based-on-daily-news-sentiment/
+
+
+## Requirements
+
+* Docker
+* make
+
+## Variables
+
+* Change variables if needed from `./Dockerfile`:
+
+```shell
+ENV binance_api_url_testnet="https://testnet.binance.vision/api"
+ENV binance_api_stalkbot_testnet="XXXX"
+ENV binance_secret_stalkbot_testnet="XXXX"
+```
+
+* Change variables if needed from `./botvars.py`.
+
+## Use
+
+* First run: `make start`
+* Run: `make run`
